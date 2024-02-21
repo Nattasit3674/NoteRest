@@ -16,6 +16,7 @@ const sequelize = new Sequelize('database', 'username', 'password', {
 
 const dbUrl = 'postgres://webadmin:HCHflr85158@node56493-env-3392176.proen.app.ruk-com.cloud:11815/Books'
 
+const sequelize = new Sequelize(dbUrl);
 
 const Book = sequelize.define('book', {
     id: {
